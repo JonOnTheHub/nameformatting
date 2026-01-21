@@ -45,7 +45,7 @@ console.log(joinedFruitArray);
 // keep the character after index 1
 // concatenate the entire thing
 
-let fullName = "jon osaghae";
+let fullName = prompt("Enter your full name, seperated with a space");
 let splitNames = fullName.split(" ");
 let firstName = splitNames[0];
 let lastName = splitNames[1];
@@ -57,7 +57,7 @@ if (firstName != NaN && lastName != NaN) {
   let modifiedLastName =
     lastName.charAt(0).toUpperCase() + lastName.slice(1).toLowerCase();
   modifiedFullName = `Full name is: ${modifiedFirstName} ${modifiedLastName}`;
-  console.log(modifiedFullName);
+  alert(modifiedFullName);
 } else {
-  console.log("There's issues w your name.");
+  alert("There's issues w your name.");
 }
